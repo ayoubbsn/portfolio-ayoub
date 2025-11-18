@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Inter:wght@400;600&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-matte-black text-white font-inter overflow-x-hidden;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(170, 255, 0, 0.5);
+}
+
+.box-glow {
+  box-shadow: 0 0 15px rgba(170, 255, 0, 0.3);
+}
