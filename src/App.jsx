@@ -236,8 +236,16 @@ const ThreeBackground = () => {
 const Nav = () => (
   <nav className="fixed top-0 left-0 right-0 z-40 p-6 backdrop-blur-md bg-black/50 border-b border-white/5">
     <div className="container mx-auto flex justify-between items-center">
-      <a href="#" className="font-orbitron text-2xl font-bold text-white tracking-tighter group">
-        AYOUB<span className="text-neon text-glow group-hover:text-white transition-colors">.AI</span>
+      <a href="#" className="group flex items-center gap-2">
+        <div className="relative w-10 h-10 flex items-center justify-center bg-black border border-neon/50 rounded-lg overflow-hidden group-hover:border-neon transition-all duration-300 shadow-neon-sm group-hover:shadow-neon">
+          <div className="absolute inset-0 bg-neon/10 group-hover:bg-neon/20 transition-colors"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6 text-neon relative z-10">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        <div className="font-orbitron text-xl font-bold text-white tracking-tighter">
+          AYOUB<span className="text-neon text-glow">.AI</span>
+        </div>
       </a>
       <div className="hidden md:flex gap-8 font-exo text-sm uppercase tracking-wider text-gray-400">
         {['Experience', 'Skills', 'Education', 'Contact'].map((item) => (
